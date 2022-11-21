@@ -37,3 +37,37 @@ int main(){
 }
 
 // =======================================================================
+//========================================================================
+/*
+CHECK IF A NUMBER IS PRIME OR NOT------
+*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x;
+    cout << "enter the number: " << endl;
+    cin >> x;
+    if(x ==1){
+        cout << "one is neither a prime number nor a composite number";
+    }else if(x ==2){
+        cout << "2 is a prime number";
+    }else if(x > 2){
+        for(int i=2; i < x; i++){
+            if(x%i ==0){
+                cout << x << " is not a prime number";
+                break;
+            }else if(i+1==x){
+                cout << x << " is a prime number";
+            }
+        }
+        
+    }
+    return 0;
+    
+}
+
+
+// =======================================================================
+//========================================================================
